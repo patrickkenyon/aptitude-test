@@ -59,4 +59,5 @@ async function deleteUser(userId) {
     })
 }
 
+
 updateUserTable()
