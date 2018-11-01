@@ -1,4 +1,12 @@
 @import "imports/modal";
+@import 'imports/logos';
+@import 'imports/variables';
+@import 'imports/buttons';
+
+html, body {
+  font-family: 'Asap', sans-serif;
+}
+
 
 .container {
   text-align: center;
@@ -27,5 +35,29 @@
     display: inline;
     margin: 10px;
   }
+}
+
+#drop-down {
+  width: 300px;
+  margin: auto;
+  text-decoration: none;
+  color: $main-button-color;
+}
+
+#drop-down:hover {
+  color: $main-button-hover;
+}
+
+#name {
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+#email {
+  margin-bottom: 10px;
+}
+
+.no-border {
+  border: none;
 }
 

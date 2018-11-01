@@ -12,8 +12,12 @@
         })
     </script>
     <meta charset="UTF-8">
+    <link rel="stylesheet" id="asap-font-css" href="https://fonts.googleapis.com/css?family=Asap%3A400%2C400i%2C600%2C700&amp;ver=4.9.8" type="text/css" media="all">
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/validateUserAdditions.js" defer></script>
     <script src="js/ajaxHandlebarsTemplate.js" defer></script>
@@ -25,30 +29,37 @@
     <script src="js/sanitiseAdmin.js" defer></script>
     <script src="js/modalSubmit.js" defer></script>
     <script src="js/postEditFunction.js" defer></script>
+    <script src="js/admin-page.js" defer></script>
     <title>Admin Page</title>
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <img class="academy-logo" src="images/logo-academy.svg">
+        </div>
+    </div>
+</div>
 <!-- Modal -->
 <div class="overlay"></div>
 <div id="modal">
     <h3 id="modal-title"> </h3>
-    <div id="modal-content">
-    </div>
+    <div id="modal-content"></div>
 </div>
 <section class="container">
     <div class="row">
         <div class="col-xs-12">
             <h1>Welcome To The Admin Page</h1>
-                <h2>Add New User</h2>
-                <form class="container_controls" id="addNewUserForm">
-                    <div class="container_input">
-                        <input type="text" id="name" name="name" placeholder="Type new user's name" required>
-                        <input type="text" id="email" name="email" placeholder="Type new user's email" required>
-                    </div>
-                    <div class="container_submit">
-                        <input type="submit" value="Add User">
-                    </div>
-                </form>
+                <h2 id="toggle-title"><a role="button" id="drop-down" >Add New User <span>&#x2193;</span></a></h2>
+            <form class="container_controls collapse" id="addNewUserForm">
+                <div class="container_input">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="text" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div>
+                    <input class="btn-mayden no-border" type="submit" value="Add User">
+                </div>
+            </form>
                 <div id='error' class='title_input'></div>
             <div>
                 <h2>Registered Users</h2>
@@ -58,9 +69,12 @@
                 <h2>Scores</h2>
                 <div class="score_list"></div>
             </div>
-          
         </div>
     </div>
+
 </section>
+<footer>
+    <img class="mayden-logo" src="images/logo-mayden.svg">
+</footer>
 </body>
 </html>
