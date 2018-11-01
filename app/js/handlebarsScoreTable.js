@@ -20,13 +20,10 @@ function updateScoreTable() {
  */
 function fillScoreTable(HBTemplate, userInfo) {
     let template = Handlebars.compile(HBTemplate)
-    let score_list = document.querySelector(".score_list")
-
-    score_list.innerHTML = ""
-
+    let score_list = document.querySelector('.score-table-entries')
     if (userInfo.success === true) {
         let html = template(userInfo)
-        score_list.innerHTML += html
+        score_list.innerHTML = html
     } else {
         score_list.innerHTML = "Please contact Admin, user list unavailable"
     }

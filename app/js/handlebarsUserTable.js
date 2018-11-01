@@ -11,7 +11,7 @@ function fillUserTable(HBTemplate) {
             return result.json()
         })
         .then(function(result) {
-            let user_list = document.querySelector(".user_list")
+            let user_list = document.querySelector(".user-table-entries")
             user_list.innerHTML = ""
 
             if (result.success) {

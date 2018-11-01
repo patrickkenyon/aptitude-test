@@ -73,7 +73,11 @@ img {
 
 .error_message {
   text-align: center;
-  font-size: large; }
+  font-size: large;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  color: #c63806; }
 
 .unanswered-nav-box {
   background-color: #e66060; }

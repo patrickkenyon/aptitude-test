@@ -2,10 +2,18 @@
   text-align: center; }
   .container .user_list {
     padding: 20px; }
-  .container .score_list {
-    padding: 20px; }
-    .container .score_list .score_item {
-      border: 1px solid #000000; }
+  .container table {
+    margin: auto;
+    text-align: left; }
+    .container table thead {
+      background-color: #045866;
+      color: #ffffff; }
+    .container table th {
+      padding: 5px; }
+    .container table td {
+      padding: 5px; }
+    .container table .table-entry:nth-child(even) {
+      background-color: #f2f2f2; }
   .container img {
     width: 100%; }
   .container p {

@@ -54,12 +54,15 @@ async function createUsersObject () {
         users.forEach(function(user) {
             if (score.id === user.id ) {
                 let obj = {}
+                let splitTime = score.time.split('.')
+                let date = score.dateCreated.split(' ')
 
                 obj['name'] = user.name
                 obj['email'] = user.email
+                obj['date'] = date[0]
                 obj['score'] = score.score
-                obj['percentage'] = score.percent
-                obj['time'] = score.time
+                obj['percentage'] = Math.round(score.percent)
+                obj['time'] = `${splitTime[0]}m ${splitTime[1]}s`
 
                 userDisplayArray.push(obj)
             }

@@ -1,0 +1,30 @@
+.academy-logo {
+  display: block;
+  width: 400px;
+  float: right;
+  margin: 20px; }
+
+.mayden-logo {
+  display: block;
+  width: 300px;
+  margin: 20px; }
+
+.logo-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0; }
+
+.btn-mayden {
+  background-color: #8d0377;
+  color: #ffffff;
+  border-radius: 0;
+  transition: background-color 0.5s ease; }
+
+.btn-mayden:hover {
+  background-color: #c63806;
+  color: #ffffff;
+  transition: background-color 0.5s ease; }
+
+html, body {
+  font-family: 'Asap', sans-serif; }
