@@ -4,7 +4,8 @@
     padding: 20px; }
   .container table {
     margin: auto;
-    text-align: left; }
+    text-align: left;
+    width: 700px; }
     .container table thead {
       background-color: #045866;
       color: #ffffff; }
