@@ -8,6 +8,7 @@ function updateScoreTable() {
     users.then(function (userInfo) {
         getTemplateAjax('js/templates/scoreTable.hbs').then(function (HBTemplate) {
             fillScoreTable(HBTemplate, userInfo)
+            stylePercentage()
         })
     })
 }
@@ -30,3 +31,20 @@ function fillScoreTable(HBTemplate, userInfo) {
 }
 
 updateScoreTable()
+
+function stylePercentage() {
+    document.querySelectorAll('.score_list .percentage').forEach(function (cell) {
+        let percentage = parseInt(cell.textContent.slice(0, -1))
+        switch (true) {
+            case (percentage >= 97):
+                cell.classList.add('above96')
+                break
+            case (percentage > 70):
+                cell.classList.add('above70')
+                break
+            case (percentage === 70):
+                cell.classList.add('is70')
+                break
+        }
+    })
+}

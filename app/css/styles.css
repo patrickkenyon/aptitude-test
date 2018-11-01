@@ -19,3 +19,12 @@
   .container p {
     display: inline;
     margin: 10px; }
+
+.above96 {
+  background-color: #deefed; }
+
+.above70 {
+  background-color: #def9a2; }
+
+.is70 {
+  background-color: #fcc25e; }
