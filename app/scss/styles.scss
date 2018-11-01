@@ -7,24 +7,39 @@ html, body {
   font-family: 'Asap', sans-serif;
 }
 
-
 .container {
   text-align: center;
+}
 
   .user_list {
     padding: 20px;
+  }
+
   .btn_height {
     padding: 0 1px 0 1px;
   }
-  }
 
-  .score_list {
-    padding: 20px;
 
-    .score_item{
-      border: 1px solid #000000;
+  table {
+    margin: auto;
+    text-align: left;
+
+    thead {
+      background-color: $tealblue6-color;
+      color: $header-text-color;
     }
 
+    th {
+      padding: 5px;
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    .table-entry:nth-child(even) {
+      background-color: $gray1-color;
+    }
   }
 
   img {
@@ -35,7 +50,7 @@ html, body {
     display: inline;
     margin: 10px;
   }
-}
+
 
 #drop-down {
   width: 300px;

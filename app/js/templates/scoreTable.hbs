@@ -1,11 +1,10 @@
 {{#each data}}
-<div class="entry">
-    <div class="score_item">
-        <p class="name">Name: {{this.name}}</p>
-        <p class="email">Email: {{this.email}}</p>
-        <p class="score">Score: {{this.score}}</p>
-        <p class="percentage">Percentage: {{this.percentage}}</p>
-        <p class="time">Time: {{this.time}}</p>
-    </div>
-</div>
+<tr class="table-entry">
+    <td class="name">{{this.name}}</td>
+    <td class="email">{{this.email}}</td>
+    <td class="date">{{this.date}}</td>
+    <td class="score">{{this.score}}</td>
+    <td class="percentage">{{this.percentage}}%</td>
+    <td class="time">{{this.time}}</td>
+</tr>
 {{/each}}

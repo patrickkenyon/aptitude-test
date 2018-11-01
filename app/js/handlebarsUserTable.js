@@ -25,7 +25,7 @@ function fillUserTable(HBTemplate) {
  *
  */
 function updateDisplayedUsers(apiResponse, template) {
-    let user_list = document.querySelector(".user_list")
+    let user_list = document.querySelector(".user-table-entries")
     user_list.innerHTML = ""
     if (apiResponse.success) {
         apiResponse.data.forEach(function(userData) {
