@@ -57,19 +57,19 @@ function changeQuestion(destinationPage) {
     let nextButton = document.querySelector(".next")
     let prevButton = document.querySelector(".prev")
     document.querySelector("h4").textContent = destinationPage + "/" + questionCount
-
-    switch(parseInt(destinationPage)) { // parseInt() in case a string is passed
+    // parseInt() in case a string is passed
+    switch(parseInt(destinationPage)) {
         case 1:
             prevButton.style.display = "none"
-            nextButton.style.display = "block"
+            nextButton.style.display = "inline-block"
             break;
         case questionCount:
-            prevButton.style.display = "block"
+            prevButton.style.display = "inline-block"
             nextButton.style.display = "none"
             break;
         default:
-            prevButton.style.display = "block"
-            nextButton.style.display = "block"
+            prevButton.style.display = "inline-block"
+            nextButton.style.display = "inline-block"
     }
 
     document.querySelector("#questions .active").classList.remove("active")

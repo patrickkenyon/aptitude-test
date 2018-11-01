@@ -1,13 +1,12 @@
+@import "imports/variables";
 @import 'imports/logos';
-@import 'imports/variables';
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #d7d6d4;
-  font-size: 14px;
+  background-color: $grey2-color;
   font-size: 1.4rem;
   font-family: 'Asap', sans-serif;
 }

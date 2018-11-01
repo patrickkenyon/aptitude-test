@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .academy-logo {
   display: block;
   width: 400px;
@@ -11,9 +15,21 @@
   margin: 20px;
 }
 
-.logo-bottom {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 0;
-  border-width: 1px 0 0;
+
+.logo-bar {
+  background-color: #ffffff;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -115px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.logo-footer, .page-wrap:after {
+  height: 115px;
 }
